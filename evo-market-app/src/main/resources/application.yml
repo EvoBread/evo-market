@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: evo-market-app
+  profiles:
+    active: dev

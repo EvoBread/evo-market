@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.evo</groupId>
+    <artifactId>evo-market</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>evo-market-api</module>
+        <module>evo-market-app</module>
+        <module>evo-market-domain</module>
+        <module>evo-market-infrastructure</module>
+        <module>evo-market-trigger</module>
+        <module>evo-market-types</module>
+    </modules>
+
+    <parent>
+        <groupId>com.evo</groupId>
+        <artifactId>evo-dependencies</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 工程模块 -->
+            <dependency>
+                <groupId>com.evo</groupId>
+                <artifactId>evo-market-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.evo</groupId>
+                <artifactId>evo-market-domain</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.evo</groupId>
+                <artifactId>evo-market-infrastructure</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.evo</groupId>
+                <artifactId>evo-market-types</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.evo</groupId>
+                <artifactId>evo-market-trigger</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
